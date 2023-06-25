@@ -1,8 +1,7 @@
 import { React , useState }from 'react';
 import { Layout, Menu, Button } from 'antd';
 import { LogoutOutlined} from '@ant-design/icons';
-import { useSearchParams , Link} from 'react-router-dom';
-import  Cookies  from "js-cookie"
+
 
 const { Header } = Layout;
 
@@ -13,12 +12,12 @@ export default function HeaderComponent () {
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <div style={{ marginRight: '16px' , marginTop:"20px"}}>
           <img
-            src="https://meiosustentavel.com.br/wp-content/uploads/2020/08/eco-3516734_1920-445x445.png"
+            src="https://images.vexels.com/media/users/3/156289/isolated/preview/f3a1ffeb227d106046b96497a747b596-icone-de-reciclagem.png"
             alt="Logo"
             style={{ height: '50px', width: '50px' }}
           />
         </div>
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']}>
+        <Menu theme="dark" mode="incline" defaultSelectedKeys={['home']}>
           <Button style={{marginRight: 5}} href="/home">Home</Button>
           <Button style={{marginRight: 5}} href='/usuario/premios'>Meus Prêmios</Button>
           <Button style={{marginRight: 5}} href="/usuario/pontos">Meus Pontos</Button>
